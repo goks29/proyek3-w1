@@ -1,0 +1,303 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/*NavBar*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  height: 90px;
+}
+
+nav .Kiri a {
+  color: var(--text-color);
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+nav .Kanan {
+  display: flex;
+  gap: 10px;
+}
+
+nav .Kanan a {
+  color: var(--text-color);
+  margin: 5px 30px;
+  padding: 8px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.4s ease;
+}
+
+nav .Kanan a:hover {
+  background-color: var(--text-color);
+  color: #eee;
+}
+
+/*Section 1 : Data_diri*/
+.Data_Diri {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px;
+  gap: 40px;
+}
+
+.Data_Diri .text h2 {
+  font-size: 40px;
+}
+
+.Data_foto img {
+  width: 700px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+/* Section 2: Riwayat Pendidikan */
+#Riwayat {
+  padding: 100px 40px;
+}
+
+#Riwayat h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Riwayat_P {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  gap: 50px;
+}
+
+.Riwayat_Item {
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.Riwayat_Item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.Riwayat_Item p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* section 3 : skills */
+#Skills {
+  padding: 80px 80px;
+}
+
+#Skills h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.skills_items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 70px; 
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.skills_items img {
+  width: 200px;
+  height: auto;
+}
+
+.skills_items p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/*ukuran tablet atau laptop kecil*/
+@media (max-width: 1270px) {
+  /*navbar*/
+  nav {
+    flex-direction: column;
+    align-items: start;
+    padding: 15px 30px;
+    height: auto;
+    gap: 10px;
+  }
+
+  nav .Kanan {
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap; /*biar gak keluar layar*/
+  }
+
+  nav .Kanan a {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+  }
+
+  /*section 1*/
+  .Data_Diri {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .Data_Diri .text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .Data_foto img {
+    max-width: 100%;   /* agar responsif */
+    height: auto;      /* biar proporsional */
+    border-radius: 10px;
+  }
+
+  /* section 2 */
+  #Riwayat h2 {
+    font-size: 30px;
+  }
+
+  .Riwayat_Item p {
+    font-size: 15px;
+  }
+
+}
+
+/* ukuran sedang */
+@media (max-width: 723px) {
+  /*navbar*/
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .Kanan a {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /*section 1*/
+  .Data_Diri {
+    padding: 0;
+    margin: 20px;
+  }
+
+  .Data_Diri .text h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+    /* section 3 */
+  .skills_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .skills_items img {
+    width: 180px;
+    height: auto;
+  }
+
+  .skills_items p {
+    font-size: 15px;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+/* hp kecil */
+@media (max-width: 500px) {
+  /* navbar */
+  nav {
+    padding: 10px;
+  }
+
+  nav .Kiri a {
+    font-size: 20px;
+  }
+
+  nav .Kanan a {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  /* Section 1 */
+  .Data_Diri {
+    margin: 15px;
+    gap: 20px;
+  }
+
+  .Data_Diri .text h2 {
+    font-size: 18px;
+  }
+
+  /* section 2 */
+  #Riwayat h2 {
+    font-size: 20px;
+  }
+
+  .Riwayat_Item p {
+    font-size: 10px;
+  }
+
+  /* section 3 */
+  .skills_items p {
+    font-size: 10px;
+    text-align: center;
+    width: 70%;
+  }
+}
+
