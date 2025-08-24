@@ -16,8 +16,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--background-color);
-
+  background: linear-gradient(to bottom, #eeeff1, #eeeff1ec);
 }
 
 a {
@@ -78,6 +77,10 @@ nav .Kanan a:hover {
   font-size: 40px;
 }
 
+.Data_Diri .text p {
+  font-size: 15px;
+}
+
 .Data_foto img {
   width: 700px;
   height: auto;
@@ -88,7 +91,7 @@ nav .Kanan a:hover {
 
 /* Section 2: Riwayat Pendidikan */
 #Riwayat {
-  padding: 100px 40px;
+  padding: 80px 40px;
 }
 
 #Riwayat h2 {
@@ -180,6 +183,7 @@ nav .Kanan a:hover {
   align-items: start;
   gap: 40px;
   padding: 20px;
+  justify-content: center;
 }
 
 .Portofolio {
@@ -191,8 +195,8 @@ nav .Kanan a:hover {
 }
 
 .Portofolio img{
-  width: 200px;
-  max-width: 200%;
+  width: 100%;
+  max-width: 200px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -350,6 +354,11 @@ nav .Kanan a:hover {
   }
 
   /* section 2 */
+
+   #Riwayat {
+    font-size: 20px;
+  }
+
   #Riwayat h2 {
     font-size: 20px;
   }
@@ -376,6 +385,11 @@ nav .Kanan a:hover {
 
   .Portofolio img {
     width: 100px;
+  }
+
+  /* section 5 */
+   #Kontak h2 {
+    font-size: 35px;
   }
 
 }
