@@ -32,10 +32,13 @@ nav {
   justify-content: space-between;
   padding: 0 60px;
   height: 90px;
+  background-color: #1a1c20;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 nav .Kiri a {
-  color: var(--text-color);
+  color: var(--background-color);
   margin: 0;
   font-size: 25px;
   font-weight: 600;
@@ -47,7 +50,7 @@ nav .Kanan {
 }
 
 nav .Kanan a {
-  color: var(--text-color);
+  color: var(--background-color);
   margin: 5px 30px;
   padding: 8px 10px;
   font-size: 20px;
@@ -112,8 +115,10 @@ nav .Kanan a:hover {
 
 .Riwayat_Item img {
   max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  height: 300px;
+  margin: 0 auto 20px;
+  display: block;
+  object-fit: contain;
 }
 
 .Riwayat_Item p {
@@ -169,8 +174,39 @@ nav .Kanan a:hover {
   margin-bottom: 40px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-areas: repeat(2,1fr);
+  align-items: start;
+  gap: 40px;
+  padding: 20px;
+}
 
+.Portofolio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
 
+.Portofolio img{
+  width: 200px;
+  max-width: 200%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* section 5 : kontak */
+#Kontak {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
 
 /*ukuran tablet atau laptop kecil*/
 @media (max-width: 1270px) {
@@ -270,6 +306,21 @@ nav .Kanan a:hover {
     text-align: center;
     width: 80%;
   }
+
+  /* section 4 */
+  .grid-container {
+    font-size: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .Portofolio img {
+    width: 150px;
+  }
+
+  .Portofolio {
+    font-size: 15px;
+  }
+  
 }
 
 /* hp kecil */
@@ -303,15 +354,29 @@ nav .Kanan a:hover {
     font-size: 20px;
   }
 
+  .Riwayat_Item {
+    margin-bottom: 5px;
+  }
+
   .Riwayat_Item p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   /* section 3 */
   .skills_items p {
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     width: 70%;
   }
+
+  /* section 4 */
+  .Portofolio {
+    font-size: 14px;
+  }
+
+  .Portofolio img {
+    width: 100px;
+  }
+
 }
 
